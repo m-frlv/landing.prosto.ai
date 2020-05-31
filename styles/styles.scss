@@ -29,6 +29,7 @@ html {
 
     .section-head {
       font-size: 60px;
+      font-weight: 600;
     }
   }
 }
@@ -41,4 +42,5 @@ html {
 @import 'reviews.scss';
 @import 'slider.scss';
 @import 'consultation.scss';
-@import 'footer.scss'
+@import 'footer.scss';
+@import 'variants.scss'

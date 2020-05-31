@@ -38,6 +38,7 @@ html section {
 
 html section .section-head {
   font-size: 60px;
+  font-weight: 600;
 }
 
 html header {
@@ -178,7 +179,8 @@ section.audience-section .cards .card .img-wrapper {
 
 section.audience-section .cards .card .text {
   color: #1565c0;
-  font-size: 24px;
+  font-size: 36px;
+  font-weight: bold;
 }
 
 section.audience-section .section-head {
@@ -209,12 +211,12 @@ section.guaranties-section {
       -ms-flex-align: center;
           align-items: center;
   background: center -1px no-repeat url(/images/back_svg.svg), center 80px no-repeat url(/images/guaranties-back-icons.svg);
-  padding: 75px 0 38px 0;
+  padding: 130px 0 38px 0;
   margin-bottom: 34px;
 }
 
 section.guaranties-section .section-head {
-  margin-bottom: 65px;
+  margin-bottom: 35px;
 }
 
 section.guaranties-section ul {
@@ -276,12 +278,12 @@ section.cycle-section .stages .stage-head {
 
 section.cycle-section .stages .stage-text {
   font-size: 36px;
-  margin-bottom: 85px;
+  margin-bottom: 45px;
 }
 
 section.reviews-section {
   background: no-repeat center top 80px url(/images/reviews_back_svg.svg);
-  padding: 106px 60px 81px 344px;
+  padding: 25px 60px 81px 344px;
   position: relative;
   z-index: 0;
 }
@@ -306,7 +308,6 @@ section.reviews-section .reviews-wrapper .reviews {
   width: 600px;
   padding: 115px 98px 66px 98px;
   position: relative;
-  border: 3px black solid;
 }
 
 section.reviews-section .reviews-wrapper .reviews .moved-rectangle {
@@ -314,9 +315,19 @@ section.reviews-section .reviews-wrapper .reviews .moved-rectangle {
   width: 100%;
   height: 100%;
   background-color: #f2f2f2;
-  z-index: -1;
+  z-index: 0;
   left: -63px;
   top: 78px;
+}
+
+section.reviews-section .reviews-wrapper .reviews .square {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px black solid;
+  z-index: 0;
 }
 
 section.reviews-section .reviews-wrapper .reviews .review-text {
@@ -471,5 +482,67 @@ section.consultation-section .section-head {
 footer {
   height: 348px;
   background: no-repeat center url(/images/svg_footer.svg), #3f3d56;
+}
+
+section.variants-section {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 70px 103px 117px 102px;
+}
+
+section.variants-section .variants-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 36px;
+  font-weight: lighter;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.variants-section .variants-wrapper .variant {
+  height: 310px;
+  max-height: 390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 80px;
+}
+
+section.variants-section .variants-wrapper .variant-1 {
+  background: left bottom no-repeat url(/images/1.svg);
+  padding-left: 30px;
+}
+
+section.variants-section .variants-wrapper .variant-2 {
+  background: left bottom no-repeat url(/images/2.svg);
+  padding-left: 75px;
+}
+
+section.variants-section .variants-wrapper .variant-3 {
+  background: left bottom no-repeat url(/images/3.svg);
+  padding-left: 30px;
+  margin-left: 430px;
+}
+
+section.variants-section .variants-wrapper .variant-head {
+  font-weight: bold;
+}
+
+section.variants-section .section-head {
+  text-align: center;
+  margin-bottom: 80px;
 }
 /*# sourceMappingURL=styles.css.map */
