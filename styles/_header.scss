@@ -1,0 +1,24 @@
+html {
+  header {
+    display: flex;
+    justify-content: center;
+    padding-top: 36px;
+    padding-bottom: 34px;
+
+    nav {
+      width: 432px;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        width: 128px;
+        text-align: center;
+
+        &:hover {
+          color: #1565c0;
+        }
+      }
+    }
+  }
+}

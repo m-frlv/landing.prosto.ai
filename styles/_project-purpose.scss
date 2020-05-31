@@ -1,0 +1,42 @@
+html {
+  section.project-purpose-section {
+    padding-right: 187px;
+    margin-bottom: 200px;
+
+    .project-purpose {
+      flex: 1.5;
+      padding-top: 240px;
+      margin-top: 51px;
+      background-image: url(/images/backsvg.svg);
+      background-position: -48px;
+
+      .section-head {
+        margin-bottom: 41px;
+
+        span {
+          color: #1565c0;
+          font-weight: 500;
+        }
+      }
+
+      .description {
+        font-size: 36px;
+        margin-bottom: 70px;
+      }
+
+      .btn-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+
+    }
+
+    .project-purpose-image {
+      height: 823px;
+      flex: 1;
+      background-image: url(/images/svg1.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

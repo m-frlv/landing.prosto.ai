@@ -1,0 +1,42 @@
+section.guaranties-section {
+  flex-direction: column;
+  align-items: center;
+  background: center -1px no-repeat url(/images/back_svg.svg),
+    center 80px no-repeat url(/images/guaranties-back-icons.svg);
+  padding: 75px 0 38px 0;
+  margin-bottom: 34px;
+
+  .section-head {
+    margin-bottom: 65px;
+  }
+
+  ul {
+    width: 921px;
+    margin-left: 40px;
+    list-style-image: url(/images/marker.svg);
+
+    li {
+      padding-left: 18px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .guarantie-text {
+    font-size: 24px;
+  }
+
+  .guarantie-head {
+    font-size: 36px;
+    position: relative;
+    top: -10px;
+  }
+
+  @media screen and (min-width: 1940px) {
+    background: center url(/images/back_svg.svg),
+      center no-repeat url(/images/guaranties-back-icons.svg);
+  }
+
+  @media screen and (max-width: 1728px) {
+    background: center url(/images/back_svg.svg)
+  }
+}

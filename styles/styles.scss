@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa');
+
+html {
+  font-family: "Comfortaa";
+  font-weight: 400;
+  color: #3f3d56;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 204px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #1565c0;
+    color: #fafafa;
+    font-size: 18px;
+  }
+
+  section {
+    display: flex;
+    padding-left: 212px;
+    padding-right: 222px;
+
+    .section-head {
+      font-size: 60px;
+    }
+  }
+}
+
+@import 'header.scss';
+@import 'project-purpose.scss';
+@import 'audience.scss';
+@import 'guaranties.scss';
+@import 'cycle.scss';
+@import 'reviews.scss';
+@import 'slider.scss';
+@import 'consultation.scss';
+@import 'footer.scss'

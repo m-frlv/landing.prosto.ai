@@ -1,0 +1,56 @@
+section.audience-section {
+  flex-direction: column;
+  margin-bottom: 35px;
+  padding: 0;
+
+  &>* {
+    padding-left: 212px;
+    padding-right: 222px;
+  }
+
+  .cards {
+    height: 310px;
+    background-color: rgba(21, 101, 192, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 38px;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 266px;
+
+      .img-wrapper {
+        height: 226px;
+        display: flex;
+        align-items: flex-end;
+        ;
+      }
+
+      .text {
+        color: #1565c0;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .section-head {
+    margin-top: 164px;
+  }
+
+  .top-triangle,
+  .bottom-triangle {
+    height: 228px;
+  }
+
+  .top-triangle {
+    background: linear-gradient(to left bottom, transparent 49.5%, rgba(21, 101, 192, 0.1) 50%) no-repeat;
+  }
+
+  .bottom-triangle {
+    background: linear-gradient(to right top, transparent 49.5%, rgba(21, 101, 192, 0.1) 50%) no-repeat;
+  }
+}
