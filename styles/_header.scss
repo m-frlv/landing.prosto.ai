@@ -5,15 +5,37 @@ html {
     padding-top: 36px;
     padding-bottom: 34px;
 
+    @media screen and (max-width: 672px) {
+      padding-bottom: 0;
+    }
+
     nav {
       width: 432px;
-      font-size: 18px;
+      font-size: 0.5rem;
       display: flex;
       justify-content: space-between;
+
+      @media screen and (max-width: 360px) {
+        flex-direction: column;
+        align-items: center;
+
+        a{
+          height: 2rem;
+        }
+      }
+
+      @media screen and (max-width: 1025px) {
+        font-size: 0.7rem;
+        width: 80%;
+      }
 
       a {
         width: 128px;
         text-align: center;
+
+        @media screen and (max-width: 1025px) {
+          width: 217px;
+        }
 
         &:hover {
           color: #1565c0;

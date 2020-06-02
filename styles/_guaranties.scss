@@ -3,8 +3,11 @@ section.guaranties-section {
   align-items: center;
   background: center -1px no-repeat url(/images/back_svg.svg),
     center 80px no-repeat url(/images/guaranties-back-icons.svg);
-  padding: 130px 0 38px 0;
   margin-bottom: 34px;
+
+  @media screen and (min-width: 1026px) {
+    padding: 130px 0 38px 0;
+  }
 
   .section-head {
     margin-bottom: 35px;
@@ -15,20 +18,39 @@ section.guaranties-section {
     margin-left: 40px;
     list-style-image: url(/images/marker.svg);
 
+    @media screen and (max-width: 1025px) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: 408px) {
+      list-style-type: none;
+      list-style-image: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+
     li {
       padding-left: 18px;
       margin-bottom: 30px;
+
+      @media screen and (max-width: 1025px) {
+        padding-left: 0;
+      }
     }
   }
 
   .guarantie-text {
-    font-size: 24px;
+    font-size: 0.66rem;
   }
 
   .guarantie-head {
-    font-size: 36px;
+    font-size: 1rem;
     position: relative;
     top: -10px;
+
+    @media screen and (max-width: 672px) {
+      top: -15px;;
+    }
   }
 
   @media screen and (min-width: 1940px) {

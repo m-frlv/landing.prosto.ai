@@ -1,15 +1,41 @@
 section.reviews-section {
   background: no-repeat center top 80px url(/images/reviews_back_svg.svg);
-  padding: 25px 60px 81px 344px;
+  padding: 25px 60px 60px 344px;
   position: relative;
   z-index: 0;
+
+  @media screen and (max-width: 1806px) {
+    padding-left: 120px;
+  }
+
+  @media screen and (max-width: 1340px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-right: 120px;
+  }
+
+  @media screen and (max-width: 1025px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   .head-wrapper {
     width: 100%;
     margin-top: 207px;
     display: flex;
     justify-content: center;
-    background: no-repeat left 145px bottom url(/images/reviews_svg_man.svg);
+    background: no-repeat left 45% bottom url(/images/reviews_svg_man.svg);
+
+    @media screen and (max-width: 1600px) {
+      background-size: 400px;
+      background-position: left 75% bottom 30%;
+    }
+
+    @media screen and (max-width: 1340px) {
+      background: none;
+      margin-top: 0px;
+      margin-bottom: 40px;
+    }
   }
 
   .reviews-wrapper {
@@ -20,6 +46,40 @@ section.reviews-section {
       padding: 115px 98px 66px 98px;
       position: relative;
 
+      @media screen and (max-width: 1806px) {
+        width: 500px;
+      }
+
+      @media screen and (max-width: 1025px) {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 700px;
+      }
+
+      @media screen and (max-width: 869px) {
+        width: 600px;
+      }
+
+      @media screen and (max-width: 769px) {
+        width: 500px;
+      }
+
+      @media screen and (max-width: 663px) {
+        width: 400px;
+      }
+
+      @media screen and (max-width: 569px) {
+        width: 300px;
+      }
+
+      @media screen and (max-width: 443px) {
+        width: 250px;
+        padding-top: 67px;
+      }
+
+      @media screen and (max-width: 383px) {
+        width: 210px;
+      }
 
       .moved-rectangle {
         position: absolute;
@@ -29,12 +89,20 @@ section.reviews-section {
         z-index: 0;
         left: -63px;
         top: 78px;
+
+        @media screen and (max-width: 1025px) {
+          left: -31px;
+        }
+
+        @media screen and (max-width: 443px) {
+          top: 48px;
+        }
       }
 
       .square {
         position: absolute;
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         border: 3px black solid;
@@ -42,21 +110,27 @@ section.reviews-section {
       }
 
       .review-text {
-        font-size: 29px;
+        font-size: 0.8rem;
         margin-bottom: 45px;
         line-height: 1.125;
 
+        @media screen and (max-width: 443px) {
+          font-size: 0.66rem;
+        }
+
         &.biggest-text {
-          font-size: 36px;
+          font-size: 1rem;
+
+          @media screen and (max-width: 443px) {
+            font-size: 0.8rem;
+          }
         }
       }
 
       .review-author {
         color: #1565c0;
-        font-size: 24px;
+        font-size: 0.66rem;
       }
     }
   }
-
-
 }

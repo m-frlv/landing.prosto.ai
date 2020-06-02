@@ -2,6 +2,21 @@ section.consultation-section {
   padding: 240px 320px 171px 340px;
   justify-content: space-between;
 
+  @media screen and (min-width: 2100px) {
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: 1910px) {
+    padding: 120px 160px 85px 120px;
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: 1025px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px 60px 50px;
+  }
+
   #consultation-form-wrapper {
     display: flex;
     flex-direction: column;
@@ -12,6 +27,11 @@ section.consultation-section {
       align-items: center;
       width: 432px;
       padding-left: 2px;
+
+      @media screen and (max-width: 551px) {
+        width: 100%;
+
+      }
     }
 
     input {
@@ -21,7 +41,17 @@ section.consultation-section {
       border: 2px solid #979797;
       padding-left: 7px;
       margin-bottom: 30px;
-      font-size: 21px;
+      font-size: 0.58rem;
+
+      @media screen and (max-width: 1300px) {
+        height: 35px;
+        width: 80%;
+      }
+
+      @media screen and (max-width: 1025px) {
+        width: 100%;
+        height: 52px;
+      }
     }
 
     .btn {
@@ -33,7 +63,13 @@ section.consultation-section {
 
   .section-head {
     width: 620px;
-    font-size: 72px;
+    font-size: 2rem;
     font-weight: 500;
+
+    @media screen and (max-width: 1025px) {
+      margin-bottom: 40px;
+      font-size: 1.6rem;
+      width: auto;
+    }
   }
 }

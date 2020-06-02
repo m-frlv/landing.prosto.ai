@@ -4,6 +4,7 @@ html {
   font-family: "Comfortaa";
   font-weight: 400;
   color: #3f3d56;
+  font-size: 36px;
 
   a {
     text-decoration: none;
@@ -14,12 +15,18 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 204px;
-    height: 48px;
+    width: 5.66rem;
+    height: 1.33rem;
     border-radius: 4px;
     background-color: #1565c0;
     color: #fafafa;
-    font-size: 18px;
+    font-size: 0.5rem;
+
+    @media screen and (max-width: 1078px) {
+      font-size: 0.7rem;
+      width: 80%;
+      height: 2.66rem;
+    }
   }
 
   section {
@@ -27,10 +34,49 @@ html {
     padding-left: 212px;
     padding-right: 222px;
 
-    .section-head {
-      font-size: 60px;
-      font-weight: 600;
+    @media screen and (max-width: 1358px) {
+      padding-left: 100px;
+      padding-right: 100px;
     }
+
+    @media screen and (max-width: 769px) {
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+
+    @media screen and (max-width: 672px) {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+
+    .section-head {
+      font-size: 1.6rem;
+      font-weight: 400;
+
+      @media screen and (max-width: 490px) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1910px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 1300px) {
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 1025px) {
+    font-size: 36px;
+  }
+
+  @media screen and (max-width: 672px) {
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 560px) {
+    font-size: 22px;
   }
 }
 

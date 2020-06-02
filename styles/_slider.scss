@@ -25,6 +25,17 @@
   opacity: 0.5;
   height: 50px;
   transform: translateY(-50%);
+
+  @media screen and (max-width: 443px) {
+    bottom: -30px;
+  }
+
+  &::before {
+    @media screen and (max-width: 443px) {
+      height: 25px !important;
+    }
+  }
+
 }
 
 .slider__control_show {

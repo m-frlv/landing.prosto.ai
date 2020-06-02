@@ -6,6 +6,26 @@ section.audience-section {
   &>* {
     padding-left: 212px;
     padding-right: 222px;
+
+    @media screen and (max-width:1600px) {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    @media screen and (max-width: 1025px) {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  
+    @media screen and (max-width: 769px) {
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+  
+    @media screen and (max-width: 672px) {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
   }
 
   .cards {
@@ -16,6 +36,20 @@ section.audience-section {
     flex-direction: row;
     padding-top: 38px;
 
+    @media screen and (max-width: 1300px) {
+      flex-wrap: wrap;
+      height: auto;
+      padding-top: 0;
+    }
+
+    @media screen and (max-width: 1025px) {
+      padding-top: 60px;
+    }
+
+    @media screen and (max-width: 560px) {
+      justify-content: space-around;
+    }
+
     .card {
       display: flex;
       flex-direction: column;
@@ -23,28 +57,85 @@ section.audience-section {
       justify-content: space-between;
       height: 266px;
 
+      @media screen and (max-width:1600px) {
+        height: 212px;
+      }
+
+      @media screen and (max-width: 1300px) {
+        width: 50%;
+        padding-bottom: 50px;
+      }
+
+      @media screen and (max-width: 1025px) {
+        height: 230px;
+      }
+
+      @media screen and (max-width: 672px) {
+        height: 212px;
+      }
+
+      @media screen and (max-width: 560px) {
+        width: 60%;
+        height: auto;
+        flex-direction: column-reverse;
+      }
+
+      img {
+        @media screen and (max-width:1600px) {
+          width: 80%;
+        }
+      }
+
       .img-wrapper {
         height: 226px;
         display: flex;
         align-items: flex-end;
-        ;
+        justify-content: center;
+
+        @media screen and (max-width:1600px) {
+          height: 160px;
+        }
+
+        @media screen and (max-width: 560px) {
+          width: 100%;
+          height: auto;
+          margin-bottom: 20px;
+        }
       }
+
 
       .text {
         color: #1565c0;
-        font-size: 36px;
+        font-size: 1rem;
         font-weight: bold;
+
+        @media screen and (max-width: 560px) {
+          margin-bottom: 15px;
+        }
       }
     }
-  }
-
-  .section-head {
-    margin-top: 164px;
   }
 
   .top-triangle,
   .bottom-triangle {
     height: 228px;
+    display: flex;
+    align-items: flex-end;
+
+    @media screen and (max-width:1600px) {
+      height: 120px;
+      padding-bottom: 30px;
+    }
+
+    @media screen and (max-width:1025px) {
+      height: 150px;
+      padding-bottom: 0;
+    }
+
+    @media screen and (max-width: 560px) {
+      height: 100px;
+    }
+
   }
 
   .top-triangle {
