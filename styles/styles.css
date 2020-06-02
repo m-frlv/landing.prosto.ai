@@ -1011,6 +1011,11 @@ section.consultation-section #consultation-form-wrapper {
           flex-direction: column;
 }
 
+section.consultation-section #consultation-form-wrapper .status {
+  font-size: 0.66rem;
+  padding-bottom: 20px;
+}
+
 section.consultation-section #consultation-form-wrapper #consultation-form {
   display: -webkit-box;
   display: -ms-flexbox;

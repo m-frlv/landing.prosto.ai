@@ -21,6 +21,11 @@ section.consultation-section {
     display: flex;
     flex-direction: column;
 
+    .status{
+      font-size: 0.66rem;
+      padding-bottom: 20px;
+    }
+
     #consultation-form {
       display: flex;
       flex-direction: column;
