@@ -13,7 +13,9 @@ var multiItemSlider = (function () {
       _positionLeftItem = 0, // позиция левого активного элемента
       _transform = 0, // значение транфсофрмации .slider_wrapper
       _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
-      _items = []; // массив элементов
+      _items = [], // массив элементов
+      _xDown = null,                                                       
+      _yDown = null;
     // наполнение массива _items
     _sliderItems.forEach(function (item, index) {
       _items.push({ item: item, position: index, transform: 0 });
@@ -54,6 +56,35 @@ var multiItemSlider = (function () {
       _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
     }
 
+    var _handleTouchStart = function (evt) {
+      const firstTouch = evt.touches[0];
+      _xDown = firstTouch.clientX;
+      _yDown = firstTouch.clientY;
+    };
+
+    var _handleTouchMove = function (evt) {
+      if (!_xDown || !_yDown) {
+        return;
+      }
+
+      var xUp = evt.touches[0].clientX;
+      var yUp = evt.touches[0].clientY;
+
+      var xDiff = _xDown - xUp;
+      var yDiff = _yDown - yUp;
+
+      if (Math.abs(xDiff) > Math.abs(yDiff)) {
+        if (xDiff > 0) {
+          _transformItem('right');
+        } else {
+          _transformItem('left');
+        }
+      }
+      /* reset values */
+      _xDown = null;
+      _yDown = null;
+    };
+
     // обработчик события click для кнопок "назад" и "вперед"
     var _controlClick = function (e) {
       if (e.target.classList.contains('slider__control')) {
@@ -68,6 +99,9 @@ var multiItemSlider = (function () {
       _sliderControls.forEach(function (item) {
         item.addEventListener('click', _controlClick);
       });
+      // добавление обработчика на свайп
+      _mainElement.addEventListener('touchstart', _handleTouchStart, false);
+      _mainElement.addEventListener('touchmove', _handleTouchMove, false);
     }
 
     // инициализация
