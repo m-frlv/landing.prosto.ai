@@ -5,6 +5,15 @@ section.guaranties-section {
     center 80px no-repeat url(/images/guaranties-back-icons.svg);
   margin-bottom: 34px;
 
+  @media screen and (min-width: 1940px) {
+    background: center url(/images/back_svg.svg),
+      center no-repeat url(/images/guaranties-back-icons.svg);
+  }
+
+  @media screen and (max-width: 1728px) {
+    background: center url(/images/back_svg.svg)
+  }
+
   @media screen and (min-width: 1026px) {
     padding: 130px 0 38px 0;
   }
@@ -51,14 +60,5 @@ section.guaranties-section {
     @media screen and (max-width: 672px) {
       top: -15px;;
     }
-  }
-
-  @media screen and (min-width: 1940px) {
-    background: center url(/images/back_svg.svg),
-      center no-repeat url(/images/guaranties-back-icons.svg);
-  }
-
-  @media screen and (max-width: 1728px) {
-    background: center url(/images/back_svg.svg)
   }
 }

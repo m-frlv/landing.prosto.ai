@@ -1,49 +1,53 @@
-section.cycle-section {
-  flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 133px;
-  background: center url(/images/cycle-back-svg.svg),
-    left 47vw top 20px no-repeat url(/images/cycle-man-back-svg.svg);
+.cycle-section-wrapper {
+  background: top url(/images/backsvg.svg);
+  background-size: 50%;
 
-  @media screen and (max-width: 1910px) {
-    background-size: contain;
-  }
+  section.cycle-section {
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 133px;
+    background: left 47vw top 20px no-repeat url(/images/cycle-man-back-svg.svg);
 
-  @media screen and (max-width: 1500px) {
-    background-size: 50%;
-    background-position: right -69px top 91px;
-  }
+    @media screen and (max-width: 1910px) {
+      background-size: contain;
+    }
 
-  @media screen and (max-width: 1150px) {
-    background-size: 46%;
-    background-position: right -69px top;
-  }
+    @media screen and (max-width: 1500px) {
+      background-size: 50%;
+      background-position: right -69px top 91px;
+    }
 
-  @media screen and (max-width: 1087px) {
-    background: center url(/images/cycle-back-svg.svg);
-    padding-top: 0
-  }
-
-  .section-head {
-    margin-bottom: 92px;
-  }
-
-  .stages {
-    width: 912px;
+    @media screen and (max-width: 1150px) {
+      background-size: 46%;
+      background-position: right -69px top;
+    }
 
     @media screen and (max-width: 1087px) {
-      width: 100%;
+      background: none;
+      padding-top: 0
     }
 
-    .stage-head {
-      color: #1565c0;
-      font-size: 1.33rem;
-      margin-bottom: 13px;
+    .section-head {
+      margin-bottom: 92px;
     }
 
-    .stage-text {
-      font-size: 1rem;
-      margin-bottom: 45px;
+    .stages {
+      width: 912px;
+
+      @media screen and (max-width: 1087px) {
+        width: 100%;
+      }
+
+      .stage-head {
+        color: #1565c0;
+        font-size: 1.33rem;
+        margin-bottom: 13px;
+      }
+
+      .stage-text {
+        font-size: 1rem;
+        margin-bottom: 45px;
+      }
     }
   }
 }

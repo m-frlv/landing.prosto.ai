@@ -1,13 +1,15 @@
 section.project-purpose-section {
   padding-right: 187px;
-  margin-bottom: 200px;
+  padding-bottom: 200px;
+  background-image: url(/images/backsvg.svg);
+  background-position: -48px;
 
   @media screen and (max-width: 1910px) {
-    margin-bottom: 0
+    padding-bottom: 0
   }
 
   @media screen and (max-width: 1078px) {
-    margin-bottom: 180px;
+    padding-bottom: 180px;
   }
 
   @media screen and (max-width: 1025px) {
@@ -23,15 +25,13 @@ section.project-purpose-section {
   @media screen and (max-width: 672px) {
     padding-right: 25px;
     padding-left: 25px;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
 
   .project-purpose {
     flex: 1.5;
     padding-top: 240px;
     margin-top: 51px;
-    background-image: url(/images/backsvg.svg);
-    background-position: -48px;
 
     @media screen and (max-width: 1910px) {
       padding-top: 143px;

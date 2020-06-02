@@ -174,18 +174,20 @@ html header nav a:hover {
 
 section.project-purpose-section {
   padding-right: 187px;
-  margin-bottom: 200px;
+  padding-bottom: 200px;
+  background-image: url(/images/backsvg.svg);
+  background-position: -48px;
 }
 
 @media screen and (max-width: 1910px) {
   section.project-purpose-section {
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
 @media screen and (max-width: 1078px) {
   section.project-purpose-section {
-    margin-bottom: 180px;
+    padding-bottom: 180px;
   }
 }
 
@@ -210,7 +212,7 @@ section.project-purpose-section {
   section.project-purpose-section {
     padding-right: 25px;
     padding-left: 25px;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
 }
 
@@ -220,8 +222,6 @@ section.project-purpose-section .project-purpose {
           flex: 1.5;
   padding-top: 240px;
   margin-top: 51px;
-  background-image: url(/images/backsvg.svg);
-  background-position: -48px;
 }
 
 @media screen and (max-width: 1910px) {
@@ -557,6 +557,18 @@ section.guaranties-section {
   margin-bottom: 34px;
 }
 
+@media screen and (min-width: 1940px) {
+  section.guaranties-section {
+    background: center url(/images/back_svg.svg), center no-repeat url(/images/guaranties-back-icons.svg);
+  }
+}
+
+@media screen and (max-width: 1728px) {
+  section.guaranties-section {
+    background: center url(/images/back_svg.svg);
+  }
+}
+
 @media screen and (min-width: 1026px) {
   section.guaranties-section {
     padding: 130px 0 38px 0;
@@ -615,76 +627,69 @@ section.guaranties-section .guarantie-head {
   }
 }
 
-@media screen and (min-width: 1940px) {
-  section.guaranties-section {
-    background: center url(/images/back_svg.svg), center no-repeat url(/images/guaranties-back-icons.svg);
-  }
+.cycle-section-wrapper {
+  background: top url(/images/backsvg.svg);
+  background-size: 50%;
 }
 
-@media screen and (max-width: 1728px) {
-  section.guaranties-section {
-    background: center url(/images/back_svg.svg);
-  }
-}
-
-section.cycle-section {
+.cycle-section-wrapper section.cycle-section {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 100px;
   padding-bottom: 133px;
-  background: center url(/images/cycle-back-svg.svg), left 47vw top 20px no-repeat url(/images/cycle-man-back-svg.svg);
+  background: left 47vw top 20px no-repeat url(/images/cycle-man-back-svg.svg);
 }
 
 @media screen and (max-width: 1910px) {
-  section.cycle-section {
+  .cycle-section-wrapper section.cycle-section {
     background-size: contain;
   }
 }
 
 @media screen and (max-width: 1500px) {
-  section.cycle-section {
+  .cycle-section-wrapper section.cycle-section {
     background-size: 50%;
     background-position: right -69px top 91px;
   }
 }
 
 @media screen and (max-width: 1150px) {
-  section.cycle-section {
+  .cycle-section-wrapper section.cycle-section {
     background-size: 46%;
     background-position: right -69px top;
   }
 }
 
 @media screen and (max-width: 1087px) {
-  section.cycle-section {
-    background: center url(/images/cycle-back-svg.svg);
+  .cycle-section-wrapper section.cycle-section {
+    background: none;
     padding-top: 0;
   }
 }
 
-section.cycle-section .section-head {
+.cycle-section-wrapper section.cycle-section .section-head {
   margin-bottom: 92px;
 }
 
-section.cycle-section .stages {
+.cycle-section-wrapper section.cycle-section .stages {
   width: 912px;
 }
 
 @media screen and (max-width: 1087px) {
-  section.cycle-section .stages {
+  .cycle-section-wrapper section.cycle-section .stages {
     width: 100%;
   }
 }
 
-section.cycle-section .stages .stage-head {
+.cycle-section-wrapper section.cycle-section .stages .stage-head {
   color: #1565c0;
   font-size: 1.33rem;
   margin-bottom: 13px;
 }
 
-section.cycle-section .stages .stage-text {
+.cycle-section-wrapper section.cycle-section .stages .stage-text {
   font-size: 1rem;
   margin-bottom: 45px;
 }
