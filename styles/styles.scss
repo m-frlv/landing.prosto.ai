@@ -21,11 +21,22 @@ html {
     background-color: #1565c0;
     color: #fafafa;
     font-size: 0.5rem;
+    transition: 0.25s;
+    
+    &:hover { 
+      border-color: #3f3d56;
+      box-shadow: inset 0 1.33rem 0 0 #3f3d56
+    }
 
     @media screen and (max-width: 1078px) {
       font-size: 0.7rem;
       width: 80%;
       height: 2.66rem;
+
+      &:hover { 
+        border-color: #3f3d56;
+        box-shadow: inset 0 2.66rem 0 0 #3f3d56
+      }
     }
   }
 
@@ -81,7 +92,6 @@ html {
   }
 }
 
-@import 'header.scss';
 @import 'project-purpose.scss';
 @import 'audience.scss';
 @import 'guaranties.scss';
