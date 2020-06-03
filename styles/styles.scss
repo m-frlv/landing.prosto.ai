@@ -33,6 +33,7 @@ html {
     display: flex;
     padding-left: 212px;
     padding-right: 222px;
+    box-shadow: inset 0 0 50px 20px white;
 
     @media screen and (max-width: 1358px) {
       padding-left: 100px;
