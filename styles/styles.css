@@ -43,6 +43,8 @@ html section {
   display: flex;
   padding-left: 212px;
   padding-right: 222px;
+  -webkit-box-shadow: inset 0 0 50px 20px white;
+          box-shadow: inset 0 0 50px 20px white;
 }
 
 @media screen and (max-width: 1358px) {

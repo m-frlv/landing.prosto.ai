@@ -9,6 +9,19 @@ $(document).ready(function () {
     return ((elemCenter <= docViewBottom) && (elemCenter >= docViewTop));
   }
 
+  $('.project-purpose-section .btn').click(function (e) {
+    const elementOffset = document.querySelector('.audience-section').getBoundingClientRect().top;
+    const scrollPosition = window.scrollY
+    const documentTop = document.documentElement.clientTop
+    const scrollOffset = elementOffset + scrollPosition - documentTop
+
+    anime({
+      targets: [document.documentElement, document.body],
+      scrollTop: scrollOffset,
+      duration: 1000
+    });
+  })
+
   //Параллакс
   $('section.project-purpose-section, .cycle-section-wrapper').mousemove(function (e) {
     var x = -(e.pageX + this.offsetLeft) / 20
@@ -23,7 +36,7 @@ $(document).ready(function () {
   })
 
   //Масштабирование
-  $('.audience-section img, .variants-wrapper > .variant').mouseenter(function (e) {
+  $('.audience-section .card, .variants-wrapper > .variant').mouseenter(function (e) {
     var animateSize = anime({
       targets: e.currentTarget,
       scale: 1.1,
@@ -33,7 +46,7 @@ $(document).ready(function () {
     animateSize.restart();
   })
 
-  $('.audience-section img, .variants-wrapper > .variant').mouseleave(function (e) {
+  $('.audience-section .card, .variants-wrapper > .variant').mouseleave(function (e) {
     var animateSize = anime({
       targets: e.currentTarget,
       scale: 1,
