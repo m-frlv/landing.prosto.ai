@@ -8,7 +8,8 @@ $(document).ready(function () {
 
     return ((elemCenter <= docViewBottom) && (elemCenter >= docViewTop));
   }
-
+  
+  //скролл
   $('.project-purpose-section .btn').click(function (e) {
     const elementOffset = document.querySelector('.audience-section').getBoundingClientRect().top;
     const scrollPosition = window.scrollY
@@ -36,27 +37,26 @@ $(document).ready(function () {
   })
 
   //Масштабирование
-  $('.audience-section .card, .variants-wrapper > .variant').mouseenter(function (e) {
-    var animateSize = anime({
-      targets: e.currentTarget,
-      scale: 1.1,
-      translateY: '-10px'
-    })
 
-    animateSize.restart();
+  function animateSize(scale, y, targets){
+    anime({
+      targets: targets,
+      scale: scale,
+      translateY: y,
+      easing: 'easeOutExpo',
+    }).restart()
+  }
+
+  $('.audience-section .card, .variants-wrapper > .variant').mouseenter(function (e) {
+    animateSize(1.1, '-10px', e.currentTarget)
   })
 
   $('.audience-section .card, .variants-wrapper > .variant').mouseleave(function (e) {
-    var animateSize = anime({
-      targets: e.currentTarget,
-      scale: 1,
-      easing: 'easeOutExpo',
-      translateY: '0'
-    })
-
-    animateSize.restart();
+    animateSize(1, '0', e.currentTarget)
   })
 
+
+  //масштабирование фона
   $('section.guaranties-section').css('background-size', '0')
 
   $(window).scroll(function (e) {
