@@ -6,11 +6,6 @@ $(document).ready(function () {
     return regex.test(email)
   }
 
-  function isPhone(phone) {
-    var regex = /^((\+7|7|8)+([0-9]){10})$/
-    return regex.test(phone)
-  }
-
   function printError(error) {
     $('.status').css('color', 'red')
     $('.status').text(error)
@@ -25,7 +20,7 @@ $(document).ready(function () {
     else if (!isEmail(email)) {
       error = 'Введите корректный адрес электронной почты'
     }
-    else if (!isPhone(phone)) {
+    else if (phone.length != 18) {
       error = 'Введите корректный номер телефона'
     }
 
